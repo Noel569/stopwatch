@@ -1,0 +1,138 @@
+body {
+    background: linear-gradient(to right, hsl(240, 20%, 10%), hsl(240, 20%, 20%));
+    font-family: sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    word-spacing: -30px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsl(240, 20%, 35%);
+    text-align: center;
+    width: 600px;
+    height: 750px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    box-shadow: 0 10px 40px #0000004a;
+}
+
+.svg {
+    height: 600px;
+    width: 600px;
+}
+
+#defaultCircle {
+    cx: 300px;
+    cy: 300px;
+    r: 250px;
+    stroke: hsl(150, 80%, 80%);
+    stroke-width: 12px;
+    fill: none;
+}
+
+#animateCircle {
+    cx: 300px;
+    cy: 300px;
+    r: 250px;
+    stroke: hsl(150, 70%, 50%);
+    stroke-width: 12px;
+    fill: none;
+    stroke-dasharray: 1571;
+    stroke-dashoffset: 1571;
+}
+
+#timer {
+    position: relative;
+    bottom: 365px;
+    font-size: 7rem;
+    color: hsl(240, 20%, 80%);
+}
+
+#hundredths {
+    font-size: 4rem;
+}
+
+#reset {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: absolute;
+    bottom: 50px;
+    right: 380px;
+    border-width: 3px;
+    background-color: transparent;
+    color: hsl(240, 20%, 80%);
+    border-color: hsl(240, 20%, 80%);
+}
+
+#reset:hover {
+    color: hsl(255, 100%, 100%);
+    border-color: hsl(255, 20%, 90%);
+}
+
+#start {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: absolute;
+    bottom: 50px;
+    left: 380px;
+    border-width: 3px;
+    background-color: transparent;
+    color: hsl(150, 70%, 50%);
+    border-color: hsl(150, 70%, 50%);
+}
+
+#start:hover {
+    color: hsl(150, 50%, 70%);
+    border-color: hsl(150, 50%, 70%);
+}
+
+#stop {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    position: absolute;
+    bottom: 50px;
+    left: 380px;
+    border-width: 3px;
+    background-color: transparent;
+    color: hsl(345, 70%, 50%);
+    border-color: hsl(345, 70%, 50%);
+}
+
+#stop:hover {
+    color: hsl(345, 70%, 60%);
+    border-color: hsl(345, 70%, 60%);
+}
+
+#save {
+    cursor: pointer;
+    font-size: 1.5rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    bottom: 110px;
+    border: none;
+    background-color: hsl(12, 80%, 55%);
+    color: hsl(240, 20%, 35%);
+}
+
+#save:hover {
+    background-color: hsl(12, 70%, 65%);
+}
